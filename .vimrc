@@ -27,11 +27,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Initialize plugin system
 call plug#end()
 
-set number
+set relativenumber
 set encoding=utf-8
 syntax enable
 set background=dark
 colorscheme gruvbox
+" use true colors
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 " set font
 if has("gui_running")
