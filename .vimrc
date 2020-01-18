@@ -4,7 +4,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
-Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -14,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system
@@ -23,7 +24,7 @@ set number
 set encoding=utf-8
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 " set font
 if has("gui_running")
@@ -73,6 +74,8 @@ nnoremap <c-p> :FZF<cr>
 " --- Lightline
 " disable native mode indicator
 set noshowmode
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
 " --- End Lightline
 "
 " --- CoC config
