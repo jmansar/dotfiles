@@ -81,6 +81,11 @@ set updatetime=100
 
 " --- fzf
 nnoremap <c-p> :FZF<cr>
+
+" makes fzf use ag which ignores files specified by .gitignore
+" requires installing silversearcher-ag
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 " --- End fzf
 
 " --- Lightline
