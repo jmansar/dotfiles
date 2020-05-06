@@ -14,3 +14,10 @@ Add `/opt/nvim/bin` to PATH in .bashrc
 PATH=$PATH:~/opt/nvim/bin
 ```
 
+
+### Install dependencies for nvim and plugins
+
+#### Fzf
+#### Ag
+#### RG
+
