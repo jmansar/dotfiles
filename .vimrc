@@ -24,6 +24,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
+Plug 'dyng/ctrlsf.vim'
 
 " Initialize plugin system
 call plug#end()
