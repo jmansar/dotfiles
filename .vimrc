@@ -26,6 +26,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'dyng/ctrlsf.vim'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
