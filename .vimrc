@@ -65,6 +65,10 @@ if has("gui_running")
   set lines=999 columns=999
 endif
 
+" disable fixed eol
+set noendofline
+set nofixendofline
+
 " shortcuts
 nnoremap ZS :w<cr> " save without exit
 
