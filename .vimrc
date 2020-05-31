@@ -25,6 +25,7 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'dyng/ctrlsf.vim'
+Plug 'tpope/vim-commentary'
 
 " Initialize plugin system
 call plug#end()
@@ -84,8 +85,8 @@ set updatetime=100
 nnoremap <c-p> :FZF<cr>
 
 " makes fzf use ag which ignores files specified by .gitignore
-" requires installing silversearcher-ag
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+" requires installing ripgrep
+let $FZF_DEFAULT_COMMAND = 'rg --files'
 
 " --- End fzf
 
