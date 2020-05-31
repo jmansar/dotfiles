@@ -85,11 +85,27 @@ set updatetime=100
 " --- End GitGutter
 
 " --- fzf
-nnoremap <c-p> :FZF<cr>
+
 
 " makes fzf use ag which ignores files specified by .gitignore
 " requires installing ripgrep
 let $FZF_DEFAULT_COMMAND = 'rg --files'
+
+" shortcuts
+nnoremap <c-p> :FZF<cr>
+nmap <Leader>f :GFiles<CR>
+nmap <Leader>F :Files<CR>
+nmap <Leader>b :Buffers<CR>
+nmap <Leader>h :History<CR>
+nmap <Leader>t :BTags<CR>
+nmap <Leader>T :Tags<CR>
+nmap <Leader>l :BLines<CR>
+nmap <Leader>L :Lines<CR>
+nmap <Leader>' :Marks<CR>
+nmap <Leader>/ :Rg<Space>
+nmap <Leader>H :Helptags!<CR>
+nmap <Leader>s :Filetypes<CR>
+nmap <Leader>C :Commands<CR>
 
 " --- End fzf
 
