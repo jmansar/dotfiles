@@ -103,7 +103,7 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint',
-  \ 'coc-tslint', 
+  \ 'coc-vetur', 
   \ 'coc-css',
   \ 'coc-html',
   \ 'coc-prettier', 
