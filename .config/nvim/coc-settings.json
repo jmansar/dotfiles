@@ -1,3 +1,4 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "scss", "javascript", "typescript", "json"]
+    "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "scss", "javascript", "typescript", "json"],
+    "vetur.format.defaultFormatter.html": "prettier"
 }
