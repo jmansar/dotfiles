@@ -104,7 +104,6 @@ nmap <Leader>L :Lines<CR>
 nmap <Leader>' :Marks<CR>
 nmap <Leader>/ :Rg<Space>
 nmap <Leader>H :Helptags!<CR>
-nmap <Leader>s :Filetypes<CR>
 nmap <Leader>C :Commands<CR>
 
 " --- End fzf
