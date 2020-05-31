@@ -40,6 +40,9 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+" leader config
+map <Space> <Leader>
+
 " set font
 if has("gui_running")
   if has("gui_gtk2")
