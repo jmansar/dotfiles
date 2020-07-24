@@ -74,7 +74,16 @@ set nofixendofline
 nnoremap ZS :w<cr> " save without exit
 
 " --- NerdTree
-nmap <C-n> :NERDTreeToggle<CR>
+function! ToggleNERDTreeFind()
+    if g:NERDTree.IsOpen()
+        execute ':NERDTreeClose'
+    elseif filereadable(expand('%'))
+        execute ':NERDTreeFind'
+    else
+        execute ':NERDTree'
+    endif
+endfunction
+nmap <C-n> :call ToggleNERDTreeFind()<CR>
 " auto close NERDTree when is last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " custom NERDTree arrows
