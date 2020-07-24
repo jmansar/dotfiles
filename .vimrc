@@ -125,8 +125,17 @@ nmap <Leader>C :Commands<CR>
 " --- Lightline
 " disable native mode indicator
 set noshowmode
-let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox'
+
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
 " --- End Lightline
 "
 " --- CoC config
