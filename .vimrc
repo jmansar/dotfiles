@@ -69,6 +69,9 @@ endif
 set noendofline
 set nofixendofline
 
+" global tabs to spaces
+set expandtab
+
 " shortcuts
 nnoremap ZS :w<cr> " save without exit
 
@@ -127,7 +130,9 @@ set noshowmode
 
 let g:airline_powerline_fonts = 1
 " --- End Airline
-"
+" --- Vim commentary
+autocmd FileType cs setlocal commentstring=//\ %s
+" --- End Vim commentary
 " --- CoC config
 let g:coc_global_extensions = [
   \ 'coc-omnisharp',
