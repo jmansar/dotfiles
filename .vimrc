@@ -20,8 +20,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'dyng/ctrlsf.vim'
@@ -122,21 +121,12 @@ nmap <Leader>C :Commands<CR>
 
 " --- End fzf
 
-" --- Lightline
+" --- Airline
 " disable native mode indicator
 set noshowmode
 
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
-" --- End Lightline
+let g:airline_powerline_fonts = 1
+" --- End Airline
 "
 " --- CoC config
 let g:coc_global_extensions = [
