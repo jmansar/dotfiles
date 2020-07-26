@@ -69,8 +69,12 @@ endif
 set noendofline
 set nofixendofline
 
-" global tabs to spaces
+
+" indent tabs config
+set tabstop=4 softtabstop=4
+set shiftwidth=4
 set expandtab
+set smartindent
 
 " shortcuts
 nnoremap ZS :w<cr> " save without exit
