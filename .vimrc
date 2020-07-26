@@ -75,6 +75,17 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set shiftround  
+
+" enable highlight search
+set hlsearch
+" highlight while search
+set incsearch
+" case insensitivity pattern matching
+set ignorecase
+" overrides ignorecase if pattern contains upcase
+set smartcase
+
 
 " shortcuts
 nnoremap ZS :w<cr> " save without exit
