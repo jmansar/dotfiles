@@ -86,6 +86,10 @@ set ignorecase
 " overrides ignorecase if pattern contains upcase
 set smartcase
 
+" paths
+set backupdir=~/.vim/temp//
+set directory=~/.vim/temp//
+set undodir=~/.vim/temp//
 
 " shortcuts
 nnoremap ZS :w<cr> " save without exit
@@ -152,7 +156,6 @@ autocmd FileType cs setlocal commentstring=//\ %s
 let g:coc_global_extensions = [
   \ 'coc-omnisharp',
   \ 'coc-snippets',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint',
   \ 'coc-vetur', 
